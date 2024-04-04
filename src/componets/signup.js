@@ -45,6 +45,7 @@ const Signup = () => {
         <form className=' flex flex-col items-center mt-8 '>
             <input className='mb-2 px-4 py-2 border rounded text-2xl' type='name' value={name} onChange={(e)=>{
                 setName(e.target.value)
+                console.log(e.target.value)
             }} placeholder='Name'/>
             <input className='mb-2 px-4 py-2 border rounded text-2xl' type='email' value={email} onChange={(e)=>{
                 setEmail(e.target.value)}} placeholder='E-mail'/>
