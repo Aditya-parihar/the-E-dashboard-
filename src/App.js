@@ -5,6 +5,7 @@ import Signup from './componets/signup'
 import './App.css';
 import PrivateComponent from './componets/privateComponent';
 import Login from './componets/login'
+import AddProduct from './componets/addProduct';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
         <Route element={<PrivateComponent/>}> 
         <Route path='/' element={ <h1>product listing in this route </h1>} />
-        <Route path='/add' element={<h1>add in this route </h1>} />
+        <Route path='/add' element={<AddProduct/>} />
         <Route path='/update' element={<h1>updation in this route </h1>} />
         <Route path='/profile' element={<h1>profile in this route </h1>} />
         <Route path='/logout' element={<h1>log out in this route </h1>} />

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, json, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const useref = useRef()
@@ -22,7 +22,7 @@ const Navbar = () => {
             <li className='m-4'><Link to="/add">Add Product</Link></li>
             <li className='m-4'><Link to="/update">Update Product</Link></li>
             <li className='m-4'><Link to="/profile">Profile</Link></li>
-            <li className='m-4'><Link onClick={clearthedetail} to="/login">Log Out</Link> </li>
+            <li className='m-4'><Link onClick={clearthedetail} to="/login">LogOut {JSON.parse(auth).name}</Link> </li>
             {/* <li className='m-4'><Link to="/log out">Log Out</Link></li> */}
         </ul>:
 

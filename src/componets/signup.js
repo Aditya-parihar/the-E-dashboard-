@@ -18,8 +18,10 @@ const Signup = () => {
         }
       })
       data = await data.json()
-      console.warn(data)
-
+      let {name , email , password} = data
+      if(!name || !email || !password){
+        alert("please enter the")
+      }
       // localStorage.setItem("user" , JSON.stringify(data))
 
       setName('');
